@@ -1,6 +1,5 @@
-package rafaelswr.dev.movies.controllers;
+package rafaelswr.dev.movies.Controllers;
 
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
