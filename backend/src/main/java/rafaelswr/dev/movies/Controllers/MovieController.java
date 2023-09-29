@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import rafaelswr.dev.movies.Entities.Movie;
 import rafaelswr.dev.movies.Services.MovieService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
-import java.rmi.MarshalledObject;
 import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/api/v1/movies")
 public class MovieController {
     /*
