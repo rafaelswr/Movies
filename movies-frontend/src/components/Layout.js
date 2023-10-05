@@ -3,7 +3,7 @@ import React from "react";
 
 const Layout = () => {
     return (
-        <main style={{backgroundColor:"#e2e2e2", padding:10, flex:1}}>
+        <main style={{backgroundColor:"black", flex:1, margin:0}}>
             <Outlet/>
         </main>
 

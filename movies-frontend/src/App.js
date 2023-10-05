@@ -4,10 +4,15 @@ import api from "./api/axiosConfig";
 import Layout from './components/Layout';
 import {Routes, Route} from "react-router-dom";
 import Home from './components/home/Home';
+import Contact from './components/contacts/Contact';
+import Header from './components/header/Header';
+import Trailer from './components/trailer/Trailer';
+
+
 
 function App() {
 
-  const [movies, setMovies] = useState();
+  const [movies, setMovies] = useState([]);
 
   
   const getMovies = async ()=>{
@@ -16,7 +21,6 @@ function App() {
       const response = await api.get("/api/v1/movies");
       console.log(response.data);
       setMovies(response.data);      
-
     }catch(err){
       console.log(err);
     }
@@ -28,11 +32,14 @@ function App() {
   },[]);
 
   return (
-    <div className="App">
+    <div className="App" style={{margin:0}}>
+      <Header/>
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route path='/' element={<Home movies={movies}/>}></Route>
-        </Route>  
+          <Route path='/Trailer/:ytTrailerId' element={<Trailer/>} ></Route>
+          <Route path='/Contact' element={<Contact/>}></Route>
+        </Route>
       </Routes>
 
     </div>
