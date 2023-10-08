@@ -47,14 +47,4 @@ function App() {
 }
 
 
-const style = {
-  flex:1,
-  margin: '0 auto',
-  width:"100%",
-  alignItems:"center", 
-  borderStyle:"dashed",
-  borderWidth:1, 
-  borderColor:"red"
-}
-
 export default App;

@@ -1,0 +1,21 @@
+
+.body{
+    margin: 2% 8%;
+
+}
+
+.title{
+    border: 1px solid grey;
+    background-color: #fdd700;
+    padding: 10px 15px;
+
+}
+
+.FormContainer{
+    margin: 15px 0;
+}
+
+.button{
+    flex-direction: row;
+
+}
