@@ -6,7 +6,7 @@ import React from 'react'
 
 const Trailer = () => {
 
-    const { ytTrailerId } = useParams();
+  const { ytTrailerId } = useParams();
 
   return (
     <div className="react-player-container">

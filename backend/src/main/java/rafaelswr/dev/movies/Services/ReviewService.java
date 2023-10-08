@@ -36,7 +36,7 @@ public class ReviewService {
                 .matching(Criteria.where("imdbId")
                         .is(imdbId))
                 .apply(new Update()
-                        .push("reviewIds").value(review)).first();
+                        .push("reviews").value(review)).first();
 
 
         return review;

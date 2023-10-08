@@ -33,7 +33,7 @@ public class Movie {
      *
      * if (1movie-manyreviews) we dont need @DocumentReference
      */
-    private List<Review> reviewsIds;
+    private List<Review> reviews;
 
 
 
