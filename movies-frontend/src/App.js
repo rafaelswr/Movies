@@ -15,7 +15,7 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [movie, setMovie] = useState({});
   const [reviews, setReviews] = useState([]);
-
+  const [contacts, setContacts] = useState({});
 
 
   
@@ -65,7 +65,7 @@ function App() {
         <Route path='/' element={<Layout/>}>
           <Route path='/' element={<Home movies={movies}/>}></Route>
           <Route path='/Trailer/:ytTrailerId' element={<Trailer/>}></Route>
-          <Route path='/contact' element={<Contact/>}></Route>
+          <Route path='/contact' element={<Contact contacts={contacts} setContacts={setContacts}/>}></Route>
           <Route path='/Reviews/:movieId' element={<Review movie={movie} reviews={reviews} getMovieData={getMovieData} setReviews={setReviews}/>} ></Route>
         </Route>
 

@@ -10,7 +10,6 @@ const Trailer = () => {
 
   return (
     <div className="react-player-container">
-       {console.log(`https://www.youtube.com/watch?v=${ytTrailerId}`)}
       
       { ytTrailerId != null ?
         (<ReactPlayer controls="true" playing={true} url={`https://www.youtube.com/watch?v=${ytTrailerId}`} 
