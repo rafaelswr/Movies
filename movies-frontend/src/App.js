@@ -8,7 +8,7 @@ import Contact from './components/contacts/Contact';
 import Header from './components/header/Header';
 import Trailer from './components/trailer/Trailer';
 import Review from './components/reviews/Review';
-
+import NotFound from './components/notFound/NotFound';
 
 function App() {
 
@@ -67,6 +67,7 @@ function App() {
           <Route path='/Trailer/:ytTrailerId' element={<Trailer/>}></Route>
           <Route path='/contact' element={<Contact contacts={contacts} setContacts={setContacts}/>}></Route>
           <Route path='/Reviews/:movieId' element={<Review movie={movie} reviews={reviews} getMovieData={getMovieData} setReviews={setReviews}/>} ></Route>
+          <Route path='*' element={<NotFound></NotFound>} ></Route>
         </Route>
 
       </Routes>

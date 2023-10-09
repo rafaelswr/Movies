@@ -22,7 +22,7 @@ const Hero = ({movies}) => {
         {
           movies.map((ele)=>{
               return (
-                <Paper>
+                <Paper key={ele.imdbId}>
                   <div className="movie-card-container">
                     <div className="movie-card" style={{"--img":`url(${ele.backdrops[1]})`}}>
                       <div className="movie-detail" >
